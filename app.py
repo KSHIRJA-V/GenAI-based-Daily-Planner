@@ -5,11 +5,11 @@ import os
 load_dotenv()
 
 st.set_page_config(page_title="AI Daily Planner", layout="centered")
-st.title("🧠 AI Based Daily Schedule Maker!")
+st.title("AI Based Daily Schedule Maker!")
 
 api_key = os.getenv("GEMINI_API_KEY")
-st.write("✅ Streamlit is running")
-st.write("🔑 API key loaded:", bool(api_key))
+# st.write("✅ Streamlit is running")
+# st.write("🔑 API key loaded:", bool(api_key))
 
 goals = st.text_area("What are your goals for today?", height=150)
 hours = st.slider("Working hours available today", min_value=2, max_value=16, value=8)
